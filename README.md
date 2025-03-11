@@ -82,7 +82,6 @@ This chat app helps pick a NIM that best fits your setup.
 ##### NIM Requirements
 
 1. A supported [NVIDIA GPU](https://docs.nvidia.com/nim/large-language-models/latest/supported-models.html#gpus) for optimization.
-   * See [remote setup guide](https://docs.nvidia.com/ai-workbench/user-guide/latest/installation/ubuntu-remote.html).
 
 2. Must use Docker runtime. If the AI Workbench is configured to use Podman, see [runtime switch guide](https://docs.nvidia.com/ai-workbench/user-guide/latest/reference/runtimes.html) for how to switch to Docker.
 
