@@ -90,16 +90,16 @@ This chat app helps pick a NIM that best fits your setup.
 
 AI Workbench utilizes [Docker Compose](https://docs.nvidia.com/ai-workbench/user-guide/latest/projects/compose.html#overview-of-docker-compose-in-ai-workbench).
 
-1. Pick `Use a NIM on the Host GPU` and enter your GPU details.
+1. Pick `Use a NIM on the Host GPU` in the chat app and enter your GPU details.
 
 2. Choose your desired model.
    * Check VRAM and/or disk space requirements.
 
-3. In AI Workbench, go to `Environment > Compose > Containers` and select the corresponding profile.
+3. In AI Workbench, go to `Environment > Compose > Containers` and select the corresponding model profile.
 
 4. Click **Start** and wait for setup. Monitor the Compose logs under **Output**
 
-5. Start chatting.
+5. Start chatting in the chat app when the NIM is ready for inference.
 
 ## License
 This NVIDIA AI Workbench example project is under the [Apache 2.0 License](https://github.com/NVIDIA/workbench-example-downloadable-nim/blob/main/LICENSE.txt)
