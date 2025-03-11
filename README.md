@@ -56,7 +56,7 @@ This app runs in [NVIDIA AI Workbench](https://docs.nvidia.com/ai-workbench/user
 
 #### Starting the Chat
 
-1. Open AI Workbench and pick a [location](https://docs.nvidia.com/ai-workbench/user-guide/latest/locations/locations.html).
+1. Open AI Workbench and pick a Location.
 
 2. Use the repository URL to clone this project with AI Workbench and wait for it to build. 
 
