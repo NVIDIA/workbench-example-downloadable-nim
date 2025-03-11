@@ -1,0 +1,487 @@
+services:
+  llama-3.1-8b-instruct:
+    image: nvcr.io/nim/meta/llama-3.1-8b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/llama-3.1-8b-instruct
+
+  llama-3.1-8b-instruct-RTX:
+    image: nvcr.io/nim/meta/llama-3.1-8b-instruct:1.8.0-RTX
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/llama-3.1-8b-instruct-RTX
+
+  llama-3.1-70b-instruct:
+    image: nvcr.io/nim/meta/llama-3.1-70b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/llama-3.1-70b-instruct
+
+  llama-3.1-405b-instruct:
+    image: nvcr.io/nim/meta/llama-3.1-405b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 8
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/llama-3.1-405b-instruct
+
+  llama-3.3-70b-instruct:
+    image: nvcr.io/nim/meta/llama-3.3-70b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/llama-3.3-70b-instruct
+
+  llama3-8b-instruct:
+    image: nvcr.io/nim/meta/llama3-8b-instruct:1.0.0
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/llama3-8b-instruct
+
+  llama3-70b-instruct:
+    image: nvcr.io/nim/meta/llama3-70b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/llama3-70b-instruct
+
+  codellama-70b-instruct:
+    image: nvcr.io/nim/meta/codellama-70b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - meta/codellama-70b-instruct
+
+  mistral-7b-instruct-v0.3:
+    image: nvcr.io/nim/mistralai/mistral-7b-instruct-v0.3:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - mistralai/mistral-7b-instruct-v0.3
+
+  mixtral-8x7b-instruct-v01:
+    image: nvcr.io/nim/mistralai/mixtral-8x7b-instruct-v01:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - mistralai/mixtral-8x7b-instruct-v01
+
+  mixtral-8x22b-instruct-v01:
+    image: nvcr.io/nim/mistralai/mixtral-8x22b-instruct-v01:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 4
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - mistralai/mixtral-8x22b-instruct-v01
+
+  mistral-nemo-12b-instruct:
+    image: nvcr.io/nim/nv-mistralai/mistral-nemo-12b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - nv-mistralai/mistral-nemo-12b-instruct
+
+  llama-3.1-nemotron-70b-instruct:
+    image: nvcr.io/nim/nvidia/llama-3.1-nemotron-70b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - nvidia/llama-3.1-nemotron-70b-instruct
+
+  gemma-2-9b-it:
+    image: nvcr.io/nim/google/gemma-2-9b-it:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - google/gemma-2-9b-it
+
+  phi-3-mini-4k-instruct:
+    image: nvcr.io/nim/microsoft/phi-3-mini-4k-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - microsoft/phi-3-mini-4k-instruct
+
+  llama-3.1-swallow-8b-instruct-v0.1:
+    image: nvcr.io/nim/tokyotech-llm/llama-3.1-swallow-8b-instruct-v0.1:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - tokyotech-llm/llama-3.1-swallow-8b-instruct-v0.1
+
+  llama-3.1-swallow-70b-instruct-v0.1:
+    image: nvcr.io/nim/tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.1:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.1
+
+  llama-3-swallow-70b-instruct-v0.1:
+    image: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+
+  qwen-2.5-7b-instruct:
+    image: nvcr.io/nim/qwen/qwen-2.5-7b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - qwen/qwen-2.5-7b-instruct
+
+  llama-3-taiwan-70b-instruct:
+    image: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - yetinglin/llama-3-taiwan-70b-instruct
+
+  deepseek-r1:
+    image: nvcr.io/nim/deepseek-ai/deepseek-r1:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 16
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - deepseek-ai/deepseek-r1
+      
+networks:
+  app-network:
+    driver: bridge
