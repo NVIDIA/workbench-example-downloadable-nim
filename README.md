@@ -92,7 +92,7 @@ AI Workbench utilizes [Docker Compose](https://docs.nvidia.com/ai-workbench/user
 1. Pick `Use a NIM on the Host GPU` in the chat app and enter your GPU details.
 
 2. Choose your desired model.
-   * Check VRAM and/or disk space requirements.
+   * Check VRAM and/or disk space recommendations.
 
 3. In AI Workbench, go to `Environment > Compose > Containers` and select the corresponding model profile.
 
