@@ -90,7 +90,7 @@ This chat app helps pick a NIM that best fits your setup.
 
 AI Workbench utilizes [Docker Compose](https://docs.nvidia.com/ai-workbench/user-guide/latest/projects/compose.html#overview-of-docker-compose-in-ai-workbench).
 
-1. Pick `Use a Downloadable NIM` and enter your GPU details.
+1. Pick `Use a NIM on the Host GPU` and enter your GPU details.
 
 2. Choose your desired model.
    * Check VRAM and/or disk space requirements.
