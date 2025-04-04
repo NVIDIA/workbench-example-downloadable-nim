@@ -52,7 +52,8 @@ mistralai_model_list = ["mistral-7b-instruct-v0.3",
 
 nv_mistralai_model_list = ["mistral-nemo-12b-instruct"]
 
-nvidia_model_list = ["llama-3.1-nemotron-70b-instruct"]
+nvidia_model_list = ["llama-3.1-nemotron-70b-instruct", 
+                     "llama-3.3-nemotron-super-49b-v1"]
 
 google_model_list = ["gemma-2-9b-it"]
 

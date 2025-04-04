@@ -481,6 +481,29 @@ services:
       - app-network
     profiles:
       - deepseek-ai/deepseek-r1
+
+  llama-3.3-nemotron-super-49b-v1:
+    image: nvcr.io/nim/nvidia/llama-3.3-nemotron-super-49b-v1:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [ gpu ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ~/.cache/nim
+        target: /opt/nim/.cache/
+    environment:
+      - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
+    networks:
+      - app-network
+    profiles:
+      - nvidia/llama-3.3-nemotron-super-49b-v1
       
 networks:
   app-network:

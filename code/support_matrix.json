@@ -30,7 +30,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "4": {
@@ -52,7 +53,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "8": {
@@ -75,7 +77,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "16": {
@@ -99,7 +102,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         }
     }, 
@@ -134,7 +138,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "4": {
@@ -156,7 +161,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "8": {
@@ -179,7 +185,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "16": {
@@ -203,7 +210,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         }
     }, 
@@ -251,7 +259,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "8": {
@@ -273,7 +282,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "16": {
@@ -295,7 +305,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         }
     }, 
@@ -343,7 +354,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "8": {
@@ -365,7 +377,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "16": {
@@ -387,7 +400,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         }
     },
@@ -446,7 +460,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "16": {
@@ -468,7 +483,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         }
     },
@@ -516,7 +532,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "8": {
@@ -538,7 +555,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         },
         "16": {
@@ -560,7 +578,8 @@
                 "gemma-2-9b-it",
                 "phi-3-mini-4k-instruct",
                 "llama-3.1-swallow-8b-instruct-v0.1",
-                "qwen2.5-7b-instruct"
+                "qwen2.5-7b-instruct",
+                "llama-3.3-nemotron-super-49b-v1"
             ]
         }
     },
