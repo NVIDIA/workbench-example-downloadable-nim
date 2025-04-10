@@ -74,6 +74,9 @@ sample_queries = ["Write a limerick about the wonders of GPU computing.",
                   "What can I see at NVIDIA's GPU Technology Conference?",
                   "Tell me about Dumbledore."]
 
+
+# Model Categories
+reasoning_on_off_models = ["llama-3.3-nemotron-super-49b-v1"]
 discard_prefix = ["mistral-nemo-12b-instruct"] # Some downloadable NIMs discard the provider in the model name
 
 # Default recommendation for other GPUs
@@ -158,6 +161,13 @@ def create_chat_model(provider, llm, use_local, gpu_type):
 def create_chat_chain(llm):
     prompt = ChatPromptTemplate.from_messages([
         ("system", system_prompt),
+        ("human", "{input}")
+    ])
+    return prompt | llm | StrOutputParser()
+
+def create_reasoning_chain(llm):
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", "{system}"),
         ("human", "{input}")
     ])
     return prompt | llm | StrOutputParser()
@@ -433,7 +443,7 @@ with col_gpu2:
                                        st.session_state.selected_model, 
                                        st.session_state.use_local,
                                        st.session_state.gpu_type)
-                chain = create_chat_chain(llm)
+                chain = create_chat_chain(llm) if st.session_state.selected_model not in reasoning_on_off_models else create_reasoning_chain(llm)
     
                 if query_selector != st.session_state.selected_query:
                     if query_selector is None:
@@ -445,7 +455,7 @@ with col_gpu2:
         
                         with message_history.chat_message("assistant"):
                             try: 
-                                response = st.write_stream(chain.stream({"input": query_selector}))
+                                response = st.write_stream(chain.stream({"input": query_selector})) if st.session_state.selected_model not in reasoning_on_off_models else st.write_stream(chain.stream({"system": "detailed thinking on", "input": query_selector}))
                             except Exception as e:
                                 error_msg = "Something went wrong: " + str(e)
                                 if str(e) == "Connection error." and st.session_state.use_local:
@@ -469,7 +479,7 @@ with col_gpu2:
                         
                         with message_history.chat_message("assistant"):
                             try: 
-                                response = st.write_stream(chain.stream({"input": prompt}))
+                                response = st.write_stream(chain.stream({"input": prompt})) if st.session_state.selected_model not in reasoning_on_off_models else st.write_stream(chain.stream({"system": "detailed thinking on", "input": prompt}))
                             except Exception as e:
                                 error_msg = "Something went wrong: " + str(e)
                                 if str(e) == "Connection error." and st.session_state.use_local:
