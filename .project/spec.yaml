@@ -20,6 +20,9 @@ layout:
     - path: data/scratch/
       type: data
       storage: gitignore
+    - path: nim_cache/
+      type: code
+      storage: git
 environment:
     base:
         registry: nvcr.io

@@ -13,7 +13,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -36,7 +36,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -59,7 +59,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -82,7 +82,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -105,7 +105,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -128,7 +128,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -151,7 +151,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -174,7 +174,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -197,7 +197,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -220,7 +220,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -243,7 +243,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -266,7 +266,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -289,7 +289,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -312,7 +312,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -335,7 +335,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -358,7 +358,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -381,7 +381,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -404,7 +404,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -427,7 +427,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -450,7 +450,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -473,7 +473,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -496,7 +496,7 @@ services:
       - "8000:8000"
     volumes:
       - type: bind
-        source: ~/.cache/nim
+        source: nim_cache
         target: /opt/nim/.cache/
     environment:
       - NGC_API_KEY=${NVIDIA_API_KEY:?Error NVIDIA_API_KEY not set}
@@ -504,7 +504,11 @@ services:
       - app-network
     profiles:
       - nvidia/llama-3.3-nemotron-super-49b-v1
-      
+
+volumes:
+  nim_cache:
+    external: true
+
 networks:
   app-network:
     driver: bridge

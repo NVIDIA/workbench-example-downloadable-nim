@@ -55,3 +55,6 @@ cover/
 # Workbench Project Layout
 data/scratch/*
 !data/scratch/.gitkeep
+nim_cache/huggingface/
+nim_cache/local_cache/
+nim_cache/ngc/
