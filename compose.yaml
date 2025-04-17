@@ -490,10 +490,11 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              count: 2
+              # count: 2
+              device_ids: ["0", "1"]
               capabilities: [ gpu ]
     ports:
-      - "8000:8000"
+      - "8050:8000"
     volumes:
       - type: bind
         source: nim_cache
